@@ -46,6 +46,8 @@
             this.OdejmowanieRadioButton = new System.Windows.Forms.RadioButton();
             this.DodawanieRadioButton = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.Pierwiastek3RadioButton = new System.Windows.Forms.RadioButton();
+            this.PierwiastekXRadioButton = new System.Windows.Forms.RadioButton();
             this.ObliczeniaBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +84,8 @@
             // 
             // ObliczeniaBox
             // 
+            this.ObliczeniaBox.Controls.Add(this.PierwiastekXRadioButton);
+            this.ObliczeniaBox.Controls.Add(this.Pierwiastek3RadioButton);
             this.ObliczeniaBox.Controls.Add(this.CotangesRadioButton);
             this.ObliczeniaBox.Controls.Add(this.TangensRadioButton);
             this.ObliczeniaBox.Controls.Add(this.CosinusRadioButton);
@@ -105,7 +109,7 @@
             // 
             this.CotangesRadioButton.AutoSize = true;
             this.CotangesRadioButton.Checked = true;
-            this.CotangesRadioButton.Location = new System.Drawing.Point(156, 89);
+            this.CotangesRadioButton.Location = new System.Drawing.Point(143, 89);
             this.CotangesRadioButton.Name = "CotangesRadioButton";
             this.CotangesRadioButton.Size = new System.Drawing.Size(41, 17);
             this.CotangesRadioButton.TabIndex = 11;
@@ -117,7 +121,7 @@
             // TangensRadioButton
             // 
             this.TangensRadioButton.AutoSize = true;
-            this.TangensRadioButton.Location = new System.Drawing.Point(156, 65);
+            this.TangensRadioButton.Location = new System.Drawing.Point(143, 65);
             this.TangensRadioButton.Name = "TangensRadioButton";
             this.TangensRadioButton.Size = new System.Drawing.Size(44, 17);
             this.TangensRadioButton.TabIndex = 10;
@@ -128,7 +132,7 @@
             // CosinusRadioButton
             // 
             this.CosinusRadioButton.AutoSize = true;
-            this.CosinusRadioButton.Location = new System.Drawing.Point(156, 42);
+            this.CosinusRadioButton.Location = new System.Drawing.Point(143, 42);
             this.CosinusRadioButton.Name = "CosinusRadioButton";
             this.CosinusRadioButton.Size = new System.Drawing.Size(43, 17);
             this.CosinusRadioButton.TabIndex = 9;
@@ -139,7 +143,7 @@
             // SinusRadioButton
             // 
             this.SinusRadioButton.AutoSize = true;
-            this.SinusRadioButton.Location = new System.Drawing.Point(156, 19);
+            this.SinusRadioButton.Location = new System.Drawing.Point(143, 19);
             this.SinusRadioButton.Name = "SinusRadioButton";
             this.SinusRadioButton.Size = new System.Drawing.Size(40, 17);
             this.SinusRadioButton.TabIndex = 8;
@@ -150,7 +154,7 @@
             // PierwiastekRadioButton
             // 
             this.PierwiastekRadioButton.AutoSize = true;
-            this.PierwiastekRadioButton.Location = new System.Drawing.Point(82, 88);
+            this.PierwiastekRadioButton.Location = new System.Drawing.Point(93, 19);
             this.PierwiastekRadioButton.Name = "PierwiastekRadioButton";
             this.PierwiastekRadioButton.Size = new System.Drawing.Size(44, 17);
             this.PierwiastekRadioButton.TabIndex = 7;
@@ -161,7 +165,7 @@
             // DzielenieRadioButton
             // 
             this.DzielenieRadioButton.AutoSize = true;
-            this.DzielenieRadioButton.Location = new System.Drawing.Point(6, 88);
+            this.DzielenieRadioButton.Location = new System.Drawing.Point(17, 88);
             this.DzielenieRadioButton.Name = "DzielenieRadioButton";
             this.DzielenieRadioButton.Size = new System.Drawing.Size(30, 17);
             this.DzielenieRadioButton.TabIndex = 6;
@@ -172,7 +176,7 @@
             // PotegaXRadioButton
             // 
             this.PotegaXRadioButton.AutoSize = true;
-            this.PotegaXRadioButton.Location = new System.Drawing.Point(82, 65);
+            this.PotegaXRadioButton.Location = new System.Drawing.Point(49, 65);
             this.PotegaXRadioButton.Name = "PotegaXRadioButton";
             this.PotegaXRadioButton.Size = new System.Drawing.Size(38, 17);
             this.PotegaXRadioButton.TabIndex = 5;
@@ -183,7 +187,7 @@
             // Potega3RadioButton
             // 
             this.Potega3RadioButton.AutoSize = true;
-            this.Potega3RadioButton.Location = new System.Drawing.Point(83, 42);
+            this.Potega3RadioButton.Location = new System.Drawing.Point(50, 42);
             this.Potega3RadioButton.Name = "Potega3RadioButton";
             this.Potega3RadioButton.Size = new System.Drawing.Size(37, 17);
             this.Potega3RadioButton.TabIndex = 4;
@@ -194,7 +198,7 @@
             // Potega2RadioButton
             // 
             this.Potega2RadioButton.AutoSize = true;
-            this.Potega2RadioButton.Location = new System.Drawing.Point(83, 19);
+            this.Potega2RadioButton.Location = new System.Drawing.Point(50, 19);
             this.Potega2RadioButton.Name = "Potega2RadioButton";
             this.Potega2RadioButton.Size = new System.Drawing.Size(37, 17);
             this.Potega2RadioButton.TabIndex = 3;
@@ -205,7 +209,7 @@
             // MnozenieRadioButton
             // 
             this.MnozenieRadioButton.AutoSize = true;
-            this.MnozenieRadioButton.Location = new System.Drawing.Point(6, 65);
+            this.MnozenieRadioButton.Location = new System.Drawing.Point(17, 65);
             this.MnozenieRadioButton.Name = "MnozenieRadioButton";
             this.MnozenieRadioButton.Size = new System.Drawing.Size(29, 17);
             this.MnozenieRadioButton.TabIndex = 2;
@@ -216,7 +220,7 @@
             // OdejmowanieRadioButton
             // 
             this.OdejmowanieRadioButton.AutoSize = true;
-            this.OdejmowanieRadioButton.Location = new System.Drawing.Point(6, 42);
+            this.OdejmowanieRadioButton.Location = new System.Drawing.Point(17, 42);
             this.OdejmowanieRadioButton.Name = "OdejmowanieRadioButton";
             this.OdejmowanieRadioButton.Size = new System.Drawing.Size(28, 17);
             this.OdejmowanieRadioButton.TabIndex = 1;
@@ -227,7 +231,7 @@
             // DodawanieRadioButton
             // 
             this.DodawanieRadioButton.AutoSize = true;
-            this.DodawanieRadioButton.Location = new System.Drawing.Point(6, 19);
+            this.DodawanieRadioButton.Location = new System.Drawing.Point(17, 19);
             this.DodawanieRadioButton.Name = "DodawanieRadioButton";
             this.DodawanieRadioButton.Size = new System.Drawing.Size(31, 17);
             this.DodawanieRadioButton.TabIndex = 0;
@@ -244,11 +248,33 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Wynik";
             // 
+            // Pierwiastek3RadioButton
+            // 
+            this.Pierwiastek3RadioButton.AutoSize = true;
+            this.Pierwiastek3RadioButton.Location = new System.Drawing.Point(93, 42);
+            this.Pierwiastek3RadioButton.Name = "Pierwiastek3RadioButton";
+            this.Pierwiastek3RadioButton.Size = new System.Drawing.Size(50, 17);
+            this.Pierwiastek3RadioButton.TabIndex = 12;
+            this.Pierwiastek3RadioButton.Text = "Sqrt3";
+            this.Pierwiastek3RadioButton.UseVisualStyleBackColor = true;
+            this.Pierwiastek3RadioButton.CheckedChanged += new System.EventHandler(this.Pierwiastek3RadioButton_CheckedChanged);
+            // 
+            // PierwiastekXRadioButton
+            // 
+            this.PierwiastekXRadioButton.AutoSize = true;
+            this.PierwiastekXRadioButton.Location = new System.Drawing.Point(93, 65);
+            this.PierwiastekXRadioButton.Name = "PierwiastekXRadioButton";
+            this.PierwiastekXRadioButton.Size = new System.Drawing.Size(51, 17);
+            this.PierwiastekXRadioButton.TabIndex = 13;
+            this.PierwiastekXRadioButton.Text = "SqrtX";
+            this.PierwiastekXRadioButton.UseVisualStyleBackColor = true;
+            this.PierwiastekXRadioButton.CheckedChanged += new System.EventHandler(this.PierwiastekXRadioButton_CheckedChanged);
+            // 
             // TestKalk
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(242, 229);
+            this.ClientSize = new System.Drawing.Size(436, 297);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ObliczeniaBox);
             this.Controls.Add(this.Wartosc2);
@@ -284,6 +310,8 @@
         private System.Windows.Forms.RadioButton CotangesRadioButton;
         private System.Windows.Forms.RadioButton TangensRadioButton;
         private System.Windows.Forms.RadioButton CosinusRadioButton;
+        private System.Windows.Forms.RadioButton PierwiastekXRadioButton;
+        private System.Windows.Forms.RadioButton Pierwiastek3RadioButton;
     }
 }
 

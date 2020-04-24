@@ -53,16 +53,14 @@ namespace SharingTest
         {
             Wartosc1.Enabled = true;
             Wartosc1.Text = "Liczba 1";
-            Wartosc2.Enabled = true;
-            Wartosc2.Text = "Liczba 2";
+            Wartosc2.Enabled = false;
         }
 
         private void Potega3RadioButton_CheckedChanged(object sender, EventArgs e)
         {
             Wartosc1.Enabled = true;
             Wartosc1.Text = "Liczba 1";
-            Wartosc2.Enabled = true;
-            Wartosc2.Text = "Liczba 2";
+            Wartosc2.Enabled = false;
         }
 
         private void PotegaXRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -70,14 +68,15 @@ namespace SharingTest
             Wartosc1.Enabled = true;
             Wartosc1.Text = "Liczba 1";
             Wartosc2.Enabled = true;
-            Wartosc2.Text = "Liczba 2";
+            Wartosc2.Text = "Potega";
         }
 
         private void PierwiastekRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             Wartosc1.Enabled = true;
             Wartosc1.Text = "Liczba 1";
-            
+            Wartosc2.Enabled = false;
+
         }
 
         private void SinusRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -112,6 +111,21 @@ namespace SharingTest
             Wartosc2.Text = "Liczba 2";
         }
 
+        private void Pierwiastek3RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            Wartosc1.Enabled = true;
+            Wartosc1.Text = "Liczba 1";
+            Wartosc2.Enabled = false;
+        }
+
+        private void PierwiastekXRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            Wartosc1.Enabled = true;
+            Wartosc1.Text = "Liczba 1";
+            Wartosc2.Enabled = true;
+            Wartosc2.Text = "Stopniów";
+        }
+
         private void DodawanieRadioButton_CheckedChanged(object sender, EventArgs e)
         {
             Wartosc1.Enabled = true;
@@ -122,21 +136,83 @@ namespace SharingTest
 
         private void ButtonLicz_Click(object sender, EventArgs e)
         {
-            if(DodawanieRadioButton.Checked)
+            if (DodawanieRadioButton.Checked)
             {
                 double val_1 = double.Parse(Wartosc1.Text);
                 double val_2 = double.Parse(Wartosc2.Text);
                 Wynik.Text = Obliczenia.Dodawanie(val_1, val_2).ToString();
-             
+
             }
-            if (OdejmoawnieRadioButton.Checked)
+            if (OdejmowanieRadioButton.Checked)
             {
-                double val_1 = double.Pardasdawdadsawdse(Wartosc1.Text);
-                double val_2 = double.Parse(Wartosc2.Text);asdawdasd
-                Wynik.Text = Obliczenia.Dodawanie(val_1, val_2).ToString();
-
+                double val_1 = double.Parse(Wartosc1.Text);
+                double val_2 = double.Parse(Wartosc2.Text);
+                Wynik.Text = Obliczenia.Odejmowanie(val_1, val_2).ToString();
             }
-
+            if (MnozenieRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                double val_2 = double.Parse(Wartosc2.Text);
+                Wynik.Text = Obliczenia.Mnozenie(val_1, val_2).ToString();
+            }
+            if (DzielenieRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                double val_2 = double.Parse(Wartosc2.Text);
+                Wynik.Text = Obliczenia.Dzielenie(val_1, val_2).ToString();
+            }
+            if (Potega2RadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Potega(val_1, 2).ToString();
+            }
+            if (Potega3RadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Potega(val_1, 3).ToString();
+            }
+            if (PotegaXRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                double val_2 = double.Parse(Wartosc2.Text);
+                Wynik.Text = Obliczenia.Potega(val_1, val_2).ToString();
+            }
+            if (PierwiastekRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Pierwiastek(val_1, 2).ToString();
+            }
+            if (Pierwiastek3RadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Pierwiastek(val_1, 3).ToString();
+            }
+            if (PierwiastekXRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                double val_2 = double.Parse(Wartosc2.Text);
+                Wynik.Text = Obliczenia.Pierwiastek(val_1, val_2).ToString();
+            }
+            if (SinusRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Sinus(val_1).ToString();
+            }
+            if (CosinusRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Cosinus(val_1).ToString();
+            }
+            if (TangensRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Tangens(val_1).ToString();
+            }
+            if (CotangesRadioButton.Checked)
+            {
+                double val_1 = double.Parse(Wartosc1.Text);
+                Wynik.Text = Obliczenia.Cotangens(val_1).ToString();
+            }
         }
 
         public TestKalk()
@@ -144,13 +220,13 @@ namespace SharingTest
             InitializeComponent();
             Wartosc1.Enabled = false;
             Wartosc2.Enabled = false;
-            Wynik.Enabled = false;            
+            Wynik.Enabled = false;
         }
     }
 
     public class Obliczenia
     {
-        public static double Dodawanie (double a, double b)
+        public static double Dodawanie(double a, double b)
         {
             return a + b;
         }
@@ -159,15 +235,16 @@ namespace SharingTest
             return a - b;
         }
 
-        public static double Mnozenie (double a, double b)
+        public static double Mnozenie(double a, double b)
         {
             return a * b;
         }
-        public static double Pierwiastek(double a)
+        public static double Pierwiastek(double a, double b)
         {
             if (a >= 0)
             {
-                return Math.Sqrt(a);
+                /*return Math.Sqrt(a);*/
+                return Math.Pow(a, (1.0 / b));
             }
             return 0;
         }
@@ -186,7 +263,7 @@ namespace SharingTest
                 return a / b;
             }
             return 0;
-        }       
+        }
         public static double Sinus(double degrees)
         {
             double angle = Math.PI * degrees / 180.0;
@@ -198,7 +275,7 @@ namespace SharingTest
             return Math.Cos(angle);
         }
         public static double Tangens(double degrees)
-           {
+        {
             double angle = Math.PI * degrees / 180.0;
             return Math.Tan(angle);
         }
